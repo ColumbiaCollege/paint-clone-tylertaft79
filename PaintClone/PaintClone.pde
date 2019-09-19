@@ -27,38 +27,38 @@ void setup() {
 void draw() {
   noStroke();
   //more green button
-  fill(0, green, 0);
+  fill(0, green+255, 0);
   rect(0, 0, 50, 50);
   if (mousePressed && mouseX<50 && mouseY<50) {
     green = green +step;
   }
-  
+  rect(0,-300,50,50);
   // more red
-  fill(red, 0, 0);
+  fill(red+255, 0, 0);
   rect(0, 50, 50, 50);
   if (mousePressed && mouseX<50 && mouseY <100 && mouseY> 50) {
     red = red +step;
   } 
   //more blue
-  fill(0,0,blue);
+  fill(0,0,blue+255);
   rect(0,100,50,50);
   if (mousePressed && mouseX<50 && mouseY <150 && mouseY > 100) {
     blue = blue +step;
   }
   //less green button
-  fill(0, green, 0);
+  fill(#ffc0cb);
   rect(50, 0, 50, 50);
   if (mousePressed && 50<mouseX && mouseX<100 && mouseY<50) {
     green = green -step;
   }
   //less red button
-  fill(red, 0, 0);
+  fill(#ffc0cb);
   rect(50, 50, 50, 50);
   if (mousePressed && 50<mouseX && mouseX <100 && mouseY>50 && mouseY<100) {
     red = red -step;
   }
   //less blue button
-  fill(0,0,blue);
+  fill(#ffc0cb);
   rect(50,100,50,50);
   if (mousePressed && 50<mouseX && mouseX <150 && mouseY>100 && mouseY <150) {
     blue = blue - step;
